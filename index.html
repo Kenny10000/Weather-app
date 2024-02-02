@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Weather Condition</title>
+    <link rel="stylesheet" href="style.css">
+    <script async defer src="script.js"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script async defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid mx-auto backbody">
+        <div class="row">
+            <div class="col-lg-6 col-12 p-lg-4">
+                <section class="mx-auto">
+                    <div class="container-fluid py-5">
+                        <div class="row mx-auto h-100">
+                            <div class="col-md-8 mx-auto col-lg-6">
+                                <div class="card" style="color: #4B515D; border-radius: 35px; width: 18rem;">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex">
+                                            <h6 class="flex-grow-1" id="cityOne">Warsaw</h6>
+                                            <h6 id="mit">15:07</h6>
+                                        </div>
+
+                                        <div class="d-flex flex-column text-center mt-5 mb-4">
+                                            <h6 id="tempe" class="display-4 mb-0 font-weight-bold" style="color: #1C2331;"> 13°C
+                                            </h6>
+                                            <span class="small" style="color: #868B94" id="desc">Stormy</span>
+                                        </div>
+
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1" style="font-size: 1rem;">
+                                                <div><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1" id="ws"> 40 km/h</span>
+                                                </div>
+                                                <div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span
+                                                        class="ms-1" id="hum"> 84% </span>
+                                                </div>
+                                                <div><i class="fas fa-sun fa-fw" style="color: #868B94;"></i> <span
+                                                        class="ms-1"> 0.2h </span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp" width="100px" id="ico">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-lg-6 col-12 p-lg-5 p-3 border border-danger"></div>
+        </div>
+    </div>
+    <input type="text" placeholder="Enter name of city" id="cityName">
+    <button onclick="checkWeather()">Check Weather</button>
+</body>
+
+</html>
